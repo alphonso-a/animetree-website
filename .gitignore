@@ -1,0 +1,37 @@
+# WordPress core files
+wp-admin/
+wp-includes/
+!wp-includes/blocks/
+!wp-includes/css/
+
+# Sensitive files
+wp-config.php
+.htaccess
+
+# Uploads and cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Ignore all plugins but allow plugin dirs (so we can unignore specific subfolders)
+wp-content/plugins/**
+!wp-content/plugins/
+!wp-content/plugins/*/
+
+# Keep assets/css, patterns, templates for all plugins
+!wp-content/plugins/*/assets/
+!wp-content/plugins/*/assets/css/
+!wp-content/plugins/*/assets/css/**
+!wp-content/plugins/*/patterns/
+!wp-content/plugins/*/patterns/**
+!wp-content/plugins/*/templates/
+!wp-content/plugins/*/templates/**
+
+# Backups
+wp-content/ai1wm-backups/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+wp-content/plugins/smart-image-resize/
